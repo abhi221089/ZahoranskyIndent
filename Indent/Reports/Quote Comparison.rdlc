@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="DocumentNo_PurchaseLine">
+          <DataField>DocumentNo_PurchaseLine</DataField>
+        </Field>
+        <Field Name="POcode">
+          <DataField>POcode</DataField>
+        </Field>
+        <Field Name="POdate">
+          <DataField>POdate</DataField>
+        </Field>
+        <Field Name="Lastcost">
+          <DataField>Lastcost</DataField>
+        </Field>
+        <Field Name="LastcostFormat">
+          <DataField>LastcostFormat</DataField>
+        </Field>
+        <Field Name="CompName">
+          <DataField>CompName</DataField>
+        </Field>
+        <Field Name="CompAddress">
+          <DataField>CompAddress</DataField>
+        </Field>
+        <Field Name="CompanyInfo_City">
+          <DataField>CompanyInfo_City</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Phone_No_">
+          <DataField>CompanyInfo_Phone_No_</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Fax_No_">
+          <DataField>CompanyInfo_Fax_No_</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Picture">
+          <DataField>CompanyInfo_Picture</DataField>
+        </Field>
+        <Field Name="CompanyInfo_Post_Code_">
+          <DataField>CompanyInfo_Post_Code_</DataField>
+        </Field>
+        <Field Name="LocAddress">
+          <DataField>LocAddress</DataField>
+        </Field>
+        <Field Name="i">
+          <DataField>i</DataField>
+        </Field>
+        <Field Name="No_PurchaseLines">
+          <DataField>No_PurchaseLines</DataField>
+        </Field>
+        <Field Name="IndentNo_PurchaseLine">
+          <DataField>IndentNo_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_PurchaseLine">
+          <DataField>UnitofMeasure_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description_PurchaseLine">
+          <DataField>Description_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description2_PurchaseLine">
+          <DataField>Description2_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLine">
+          <DataField>Quantity_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLineFormat">
+          <DataField>Quantity_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="BuyfromVendorNo_PurchaseLine">
+          <DataField>BuyfromVendorNo_PurchaseLine</DataField>
+        </Field>
+        <Field Name="DirectUnitCost_PurchaseLine">
+          <DataField>DirectUnitCost_PurchaseLine</DataField>
+        </Field>
+        <Field Name="DirectUnitCost_PurchaseLineFormat">
+          <DataField>DirectUnitCost_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="TotalAmt">
+          <DataField>TotalAmt</DataField>
+        </Field>
+        <Field Name="TotalAmtFormat">
+          <DataField>TotalAmtFormat</DataField>
+        </Field>
+        <Field Name="RecVendor_Name">
+          <DataField>RecVendor_Name</DataField>
+        </Field>
+        <Field Name="RecVendor_No_City">
+          <DataField>RecVendor_No_City</DataField>
+        </Field>
+        <Field Name="todaydate">
+          <DataField>todaydate</DataField>
+        </Field>
+        <Field Name="CurrentTime">
+          <DataField>CurrentTime</DataField>
+        </Field>
+        <Field Name="PFAmt">
+          <DataField>PFAmt</DataField>
+        </Field>
+        <Field Name="PFAmtFormat">
+          <DataField>PFAmtFormat</DataField>
+        </Field>
+        <Field Name="MissCharges1">
+          <DataField>MissCharges1</DataField>
+        </Field>
+        <Field Name="MissCharges2">
+          <DataField>MissCharges2</DataField>
+        </Field>
+        <Field Name="MissCharges3">
+          <DataField>MissCharges3</DataField>
+        </Field>
+        <Field Name="MissCharges4">
+          <DataField>MissCharges4</DataField>
+        </Field>
+        <Field Name="MissCharges5">
+          <DataField>MissCharges5</DataField>
+        </Field>
+        <Field Name="MissCharges6">
+          <DataField>MissCharges6</DataField>
+        </Field>
+        <Field Name="MissCharges7">
+          <DataField>MissCharges7</DataField>
+        </Field>
+        <Field Name="MissCharges8">
+          <DataField>MissCharges8</DataField>
+        </Field>
+        <Field Name="MissAmt1">
+          <DataField>MissAmt1</DataField>
+        </Field>
+        <Field Name="MissAmt1Format">
+          <DataField>MissAmt1Format</DataField>
+        </Field>
+        <Field Name="MissAmt2">
+          <DataField>MissAmt2</DataField>
+        </Field>
+        <Field Name="MissAmt2Format">
+          <DataField>MissAmt2Format</DataField>
+        </Field>
+        <Field Name="MissAmt3">
+          <DataField>MissAmt3</DataField>
+        </Field>
+        <Field Name="MissAmt3Format">
+          <DataField>MissAmt3Format</DataField>
+        </Field>
+        <Field Name="MissAmt4">
+          <DataField>MissAmt4</DataField>
+        </Field>
+        <Field Name="MissAmt4Format">
+          <DataField>MissAmt4Format</DataField>
+        </Field>
+        <Field Name="MissAmt5">
+          <DataField>MissAmt5</DataField>
+        </Field>
+        <Field Name="MissAmt5Format">
+          <DataField>MissAmt5Format</DataField>
+        </Field>
+        <Field Name="MissAmt6">
+          <DataField>MissAmt6</DataField>
+        </Field>
+        <Field Name="MissAmt6Format">
+          <DataField>MissAmt6Format</DataField>
+        </Field>
+        <Field Name="MissAmt7">
+          <DataField>MissAmt7</DataField>
+        </Field>
+        <Field Name="MissAmt7Format">
+          <DataField>MissAmt7Format</DataField>
+        </Field>
+        <Field Name="MissAmt8">
+          <DataField>MissAmt8</DataField>
+        </Field>
+        <Field Name="MissAmt8Format">
+          <DataField>MissAmt8Format</DataField>
+        </Field>
+        <Field Name="RemarksText">
+          <DataField>RemarksText</DataField>
+        </Field>
+        <Field Name="ShortcutDimension1Code_PurchaseLine">
+          <DataField>ShortcutDimension1Code_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcutDimension2Code_PurchaseLine">
+          <DataField>ShortcutDimension2Code_PurchaseLine</DataField>
+        </Field>
+        <Field Name="QuotedPrice">
+          <DataField>QuotedPrice</DataField>
+        </Field>
+        <Field Name="QuotedPriceFormat">
+          <DataField>QuotedPriceFormat</DataField>
+        </Field>
+        <Field Name="FreightAmt">
+          <DataField>FreightAmt</DataField>
+        </Field>
+        <Field Name="FreightAmtFormat">
+          <DataField>FreightAmtFormat</DataField>
+        </Field>
+        <Field Name="P_Famt">
+          <DataField>P_Famt</DataField>
+        </Field>
+        <Field Name="P_FamtFormat">
+          <DataField>P_FamtFormat</DataField>
+        </Field>
+        <Field Name="LineDiscount_PurchaseLine">
+          <DataField>LineDiscount_PurchaseLine</DataField>
+        </Field>
+        <Field Name="LineDiscount_PurchaseLineFormat">
+          <DataField>LineDiscount_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="ExDutyPer">
+          <DataField>ExDutyPer</DataField>
+        </Field>
+        <Field Name="ExDutyPerFormat">
+          <DataField>ExDutyPerFormat</DataField>
+        </Field>
+        <Field Name="PayTermsDis">
+          <DataField>PayTermsDis</DataField>
+        </Field>
+        <Field Name="DeliveryTerms">
+          <DataField>DeliveryTerms</DataField>
+        </Field>
+        <Field Name="TotalQty">
+          <DataField>TotalQty</DataField>
+        </Field>
+        <Field Name="TotalQtyFormat">
+          <DataField>TotalQtyFormat</DataField>
+        </Field>
+        <Field Name="CreatedBy_PurchHdr">
+          <DataField>CreatedBy_PurchHdr</DataField>
+        </Field>
+        <Field Name="short1">
+          <DataField>short1</DataField>
+        </Field>
+        <Field Name="short2">
+          <DataField>short2</DataField>
+        </Field>
+        <Field Name="cost">
+          <DataField>cost</DataField>
+        </Field>
+        <Field Name="costFormat">
+          <DataField>costFormat</DataField>
+        </Field>
+        <Field Name="IndentVendorcost">
+          <DataField>IndentVendorcost</DataField>
+        </Field>
+        <Field Name="IndentVendorcostFormat">
+          <DataField>IndentVendorcostFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

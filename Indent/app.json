@@ -1,0 +1,96 @@
+{
+  "id": "e6a02d71-587d-48c9-be00-4c0f26796e5b",
+  "name": "Indent",
+  "publisher": "Alle",
+  "version": "1.0.0.2",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id":  "7106d701-c601-4a5f-97c2-b8b323ae2c18",
+      "name":  "QR Generator",    
+      "publisher":  "Microsoft",
+      "version":  "22.1.0.0"
+    },
+    {
+      "id": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+      "name": "India GST",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "050f6146-bffd-40de-942c-d0dd510ec20f",
+      "name": "India Reports",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "d3c551dd-5903-4194-b153-04ced9d29a2c",
+      "name": "India Tax Base",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "eae5779e-7797-4c4c-977e-7516652b7a65",
+      "name": "India TDS",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "eddcf82e-482c-49d1-836b-ad0284f2c5b0",
+      "name": "India TCS",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "f1d9b696-156b-4251-b542-34e549fa80e9",
+      "name": "India Voucher Interface",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id": "c1eafb3f-e397-468e-bdb4-ecc5c317ca00",
+      "name": "Tax Engine",
+      "publisher": "Microsoft",
+      "version": "22.1.0.0"
+    },
+    {
+      "id":  "2dc39818-e0f0-42b6-99eb-ba29dc5f4102",
+      "name":  "India Gate Entry",
+      "publisher":  "Microsoft",
+      "version":  "22.1.0.0"
+    },
+    {
+      "id": "cdd1fe8b-dd7a-4400-b1c5-ad57fcdc110f",
+      "name": "ZAHORANSKYLive",
+      "publisher": "Alletec",
+      "version": "1.0.0.17"
+    },
+    {
+      "id": "584bc83f-6d3b-4643-8d56-ef3f39f5f6dd",
+      "name": "Quality",
+      "publisher": "Alle",
+      "version": "6.0.0.5"
+    }
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "12.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
